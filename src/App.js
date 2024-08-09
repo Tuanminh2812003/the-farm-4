@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './layouts/Home';
+import Showmodel1 from './layouts/ShowModel1';
+import Showmodel2 from './layouts/Showmodel2';
+import Showmodel3 from './layouts/Showmodel3';
+import Showmodel4 from './layouts/Showmodel4';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/model1' element={<Showmodel1/>}/>
+        <Route path='/model2' element={<Showmodel2/>}/>
+        <Route path='/model3' element={<Showmodel3/>}/>
+        <Route path='/model4' element={<Showmodel4/>}/>
+      </Routes>
+    </>
   );
 }
 
