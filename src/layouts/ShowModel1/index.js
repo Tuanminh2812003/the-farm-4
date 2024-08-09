@@ -3,7 +3,7 @@ import { Canvas, extend } from '@react-three/fiber';
 import * as THREE from 'three';
 import { OrbitControls } from '@react-three/drei'; // Import OrbitControls
 
-import Model1 from "../../components/Model1";
+import Model1 from '../../components/Model1';
 
 // Extend THREE with custom geometries
 extend({ PlaneGeometry: THREE.PlaneGeometry, BoxGeometry: THREE.BoxGeometry });
@@ -16,7 +16,7 @@ function Showmodel1(){
                 <ambientLight intensity={2} />
                 {/* item */}
                 <Model1
-                    position={[0, -2, 0]}
+                    position={[11, -1, 0]}
                     rotation={[0, 0, 0]}
                     scale={[1,1,1]}
                 />

@@ -16,7 +16,7 @@ function Showmodel1(){
                 <ambientLight intensity={2} />
                 {/* item */}
                 <Model1
-                    position={[0, -2, -2]}
+                    position={[0, -3, -2]}
                     rotation={[0, 0, 0]}
                     scale={[2,2,2]}
                 />

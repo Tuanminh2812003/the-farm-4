@@ -6,7 +6,7 @@ import { clone } from 'three/examples/jsm/utils/SkeletonUtils'; // Import clone
 import { Euler } from 'three';
 
 function Model1({ position, rotation, scale, onClick }) {
-    const gltf = useLoader(GLTFLoader, '/assets/68_photobooth_send_final.glb');
+    const gltf = useLoader(GLTFLoader, '/assets/KV1.glb');
     const ref = useRef();
 
     useEffect(() => {

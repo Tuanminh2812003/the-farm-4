@@ -7,6 +7,7 @@ import Showmodel1 from './layouts/ShowModel1';
 import Showmodel2 from './layouts/Showmodel2';
 import Showmodel3 from './layouts/Showmodel3';
 import Showmodel4 from './layouts/Showmodel4';
+import Showmodel5 from './layouts/ShowModel5';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/model2' element={<Showmodel2/>}/>
         <Route path='/model3' element={<Showmodel3/>}/>
         <Route path='/model4' element={<Showmodel4/>}/>
+        <Route path='/model5' element={<Showmodel5/>}/>
       </Routes>
     </>
   );

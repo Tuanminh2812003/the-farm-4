@@ -6,7 +6,7 @@ import { clone } from 'three/examples/jsm/utils/SkeletonUtils'; // Import clone
 import { Euler } from 'three';
 
 function Model1({ position, rotation, scale, onClick }) {
-    const gltf = useLoader(GLTFLoader, '/assets/congvao.glb');
+    const gltf = useLoader(GLTFLoader, '/assets/KV2-PA1.glb');
     const ref = useRef();
 
     useEffect(() => {
