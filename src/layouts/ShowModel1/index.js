@@ -13,7 +13,7 @@ function Showmodel1(){
         <div style={{ width: '100vw', height: '100vh' }}> {/* Container div */}
             <Canvas shadows style={{ width: '100%', height: '100%' }}> {/* Canvas full screen */}
                 {/* Môi trường */}
-                <ambientLight intensity={3} />
+                <ambientLight intensity={2} />
                 {/* item */}
                 <Model1
                     position={[0, -2, 0]}
