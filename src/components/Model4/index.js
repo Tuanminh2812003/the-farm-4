@@ -17,6 +17,14 @@ function Model1({ position, rotation, scale, onClick }) {
             rotation[1] * (Math.PI / 180),
             rotation[2] * (Math.PI / 180)
         );
+
+        // Kích hoạt nhận bóng đổ và tạo bóng đổ cho các mesh
+        ref.current.traverse((child) => {
+            if (child.isMesh) {
+                child.castShadow = true; // Cho phép tạo bóng đổ
+                child.receiveShadow = true; // Cho phép nhận bóng đổ
+            }
+        });
         }
     }, [rotation]);
 
